@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>用户管理</title>
+		<base href="/entertile/platform/"/>
+	</head>
+	<body>
+		<div class="tab-header" atomu="PageHeader" react="react.header"></div>
+		<div class="tab-content">
+			<div id="list" class="tab-pane fade active in container-fluid">
+				<div class="row">
+					<div class="col-sm-9"></div>
+					<div class="col-sm-3">3</div>
+				</div>
+			</div>
+			<div id="create" class="tab-pane fade container-fluid">
+				
+			</div>
+		</div>
+		<script src="atomu/bootstrap.js"></script>
+		<script>
+		var react={
+			header:{
+				title:"用户管理",
+				tabs:[
+					{title:"用户列表", key:"list", active:true}
+				],
+				onTabClick:function(){
+					console.log(this);
+				}
+			}
+		}
+		</script>
+	</body>
+</html>
