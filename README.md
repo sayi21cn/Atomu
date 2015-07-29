@@ -1,2 +1,43 @@
-# Atomu
-The most powerful admin panel development kit, built under jQuery+Bootstrap
+# Atomu通用平台开发框架
+
+##Atomu是什么？
+Atomu是一个企业级通用平台开发框架，目的在于如何快捷高效率地开发出企业内部自动化管理平台。
+
+##Atomu有哪些基础功能？
+为突出Atomu框架的通用性，目前已在系统内部集成如下最核心功能：
+1、用户（组）管理模块
+2、通用权限管理模块
+3、插件化管理模块
+
+##一切都是插件
+
+> 在Atomu的世界中，一切都是插件！
+
+Atomu已经具备插件自动化安装和卸载功能：想部署新功能到系统，仅需几次点击！
+同时权限配置已集成到插件安装配置文件中：基本信息、权限、自定义安装/卸载脚本，都在一个文件中。
+安装完插件，其他的交给平台管理员在平台上维护吧！
+
+##如何开发一个插件？
+1、复制Application目录下的Sample文件夹
+2、修改内部install.php文件（模块全部配置都在这里）
+3、具体功能开发（模块完整基于ThinkPHP 3.2.3，放心大胆的使用！）
+4、把模块文件打包发布即可（plugin.zip）
+
+##Atomu用到了哪些技术？
+1、数据库：MySQL （其他数据库仅需配置即可更改）
+2、服务端：
+ - PHP5.6
+ - ThinkPHP 3.2.3
+3、浏览器端：
+ - 当前版本：jQuery + Bootstrap + React.JS
+ - V2版本：Dojo
+ - V1版本：jQuery + Polymer
+4、工程化部署工具：
+ - Gulp
+ - 自定义动态编译引擎（即将退役）
+
+##Atomu默认界面截图
+![此处输入图片的描述][1]
+
+
+  [1]: http://jinlei.me/wp-content/themes/resume/data/atomu.png
